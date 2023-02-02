@@ -1,0 +1,26 @@
+#conversor {
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+#conversor p, #conversor p1, #conversor p2, #converter, #resultado {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#inverter {
+  position: absolute;
+  right: 105px;
+  top: 50%;
+  transform: translateY(-20%);
+}
+
+#converter {
+  display: block;
+  margin: 20px auto;
+}
