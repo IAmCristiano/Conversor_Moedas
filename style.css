@@ -15,12 +15,39 @@
 
 #inverter {
   position: absolute;
-  right: 105px;
-  top: 50%;
-  transform: translateY(-20%);
+  right: 80px;
+  top: 45%;
+  padding: 10px 20px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: all 0.2s ease-in-out;
+}
+
+#inverter:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 #converter {
   display: block;
   margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: all 0.2s ease-in-out;
+}
+
+#moedaDe, #moedaPara, #inverter, #converter:hover {
+  cursor: pointer;
+}
+
+#converter:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }

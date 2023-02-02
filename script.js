@@ -14,6 +14,7 @@ const converter = async () => {
     const taxaDeCambio = await fetchExchangeRate(moedaDe, moedaPara);
     const resultado = valor * taxaDeCambio;
     document.querySelector("#resultado span").innerHTML = resultado.toFixed(2);
+    document.getElementById("valor").focus();
 };
 
 const inverter = () => {
@@ -25,5 +26,6 @@ const inverter = () => {
     converter();
 };
 
+document.getElementById("valor").focus();
 document.getElementById("converter").addEventListener("click", converter);
 document.getElementById("inverter").addEventListener("click", inverter);
