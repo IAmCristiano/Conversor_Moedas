@@ -97,15 +97,30 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 480px) {
+  
   #conversor {
-    height: 80%;
+    height: max-content;
     width: 100%;
+  }
+
+  label {
+    font-size: 150%;
+  }
+
+  #de, #para {
+    margin-left: -20px;
+  }
+
+  #moedaDe, #moedaPara {
+    font-size: larger;
+    padding: 1%;
   }
 
   #inverter {
     position: absolute;
-    right: 20%;
-    top: 45%;
+    right: 9%;
+    top: 44%;
+    width: 25%;
   }
 }
